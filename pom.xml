@@ -6,7 +6,7 @@
 	<artifactId>Java-TestNG-Selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
-		<sourceDirectory>Java-TestNG-Selenium/src</sourceDirectory>
+		<sourceDirectory>Java-TestNG-Azure</sourceDirectory>
 		<resources>
 			<resource>
 				<directory>Java-TestNG-Selenium/src</directory>
@@ -37,8 +37,10 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!--suppress UnresolvedMavenProperty -->
-						<suiteXmlFile>${suite}</suiteXmlFile>
+						<suiteXmlFile>single.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
+
 				</configuration>
 			</plugin>
 		</plugins>
