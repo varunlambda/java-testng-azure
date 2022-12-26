@@ -19,3 +19,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+# Maven
+- task: CmdLine@2
+  inputs:
+    script: 'mvn clean install'
+    
+- task: LambdatestResults@1
