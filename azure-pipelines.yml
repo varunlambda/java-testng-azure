@@ -8,10 +8,10 @@ trigger:
 pool:
   vmImage: windows-latest
 
+# Maven
 steps:
 - task: Maven@3
 
-# Maven
 - task: CmdLine@2
   inputs:
     script: 'mvn clean install'
