@@ -6,7 +6,11 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  LT_USERNAME: 'kaustubhd'
+  LT_ACCESS_KEY: 'ZgVi48UdEQZ2vHgUs7XN54zNV8akxeOqY1hp4aHpYRDPmVvmgo'
 
 # Maven
 steps:
@@ -15,5 +19,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'mvn clean install'
-    
+
 - task: LambdatestResults@1
