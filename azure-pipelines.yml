@@ -15,11 +15,9 @@ variables:
 
 # Maven
 steps:
-- task: Maven@3
-
 - task: configuration@1
   inputs:
     connection: 'my-config'
     isTunnelActivate: false
-
+- task: Maven@3
 - task: LambdatestResults@1
