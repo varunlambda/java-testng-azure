@@ -19,7 +19,7 @@ steps:
 
 - task: configuration@1
   inputs:
-    connection: 'Service_Demo'
+    connection: 'my-config'
     isTunnelActivate: false
 
 - task: LambdatestResults@1
