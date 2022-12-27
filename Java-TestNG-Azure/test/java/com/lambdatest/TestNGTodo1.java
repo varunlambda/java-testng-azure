@@ -37,6 +37,7 @@ public class TestNGTodo1 {
         String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
         caps.setCapability("tags", Tags);
 
+        System.out.println("====================" +username + authkey + "====================");
         driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
 
     }
