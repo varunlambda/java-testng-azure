@@ -9,9 +9,9 @@ pool:
   vmImage: 'windows-latest'
 
 
-#variables:
-#  LT_USERNAME: 'kaustubhd'
-#  LT_ACCESS_KEY: 'ZgVi48UdEQZ2vHgUs7XN54zNV8akxeOqY1hp4aHpYRDPmVvmgo'
+variables:
+  LT_USERNAME: 'kaustubhd'
+  LT_ACCESS_KEY: 'ZgVi48UdEQZ2vHgUs7XN54zNV8akxeOqY1hp4aHpYRDPmVvmgo'
 
 # Maven
 steps:
