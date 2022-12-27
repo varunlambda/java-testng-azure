@@ -16,8 +16,4 @@ variables:
 steps:
 - task: Maven@3
 
-- task: CmdLine@2
-  inputs:
-    script: 'mvn clean install'
-
 - task: LambdatestResults@1
