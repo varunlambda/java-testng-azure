@@ -8,6 +8,7 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
+
 variables:
   LT_USERNAME: 'kaustubhd'
   LT_ACCESS_KEY: 'ZgVi48UdEQZ2vHgUs7XN54zNV8akxeOqY1hp4aHpYRDPmVvmgo'
@@ -15,5 +16,10 @@ variables:
 # Maven
 steps:
 - task: Maven@3
+
+- task: configuration@1
+  inputs:
+    connection: 'Service_Demo'
+    isTunnelActivate: false
 
 - task: LambdatestResults@1
