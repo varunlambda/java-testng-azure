@@ -38,8 +38,8 @@ public class TestNGTodo1 {
         caps.setCapability("tags", Tags);
 
         System.out.println("========================================");
-        System.out.println(username);
-        System.out.println(authkey);
+        System.out.println("---------------u----"+username);
+        System.out.println("---------aaa----"+authkey);
         System.out.println("========================================");
         driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
 
