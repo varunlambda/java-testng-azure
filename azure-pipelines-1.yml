@@ -15,10 +15,10 @@ variables:
   LT_BUILD_NAME: 'Madhuri Test'
 
 steps:
-- task: configuration@1
-  inputs:
-    connection: 'my-config'
-    isTunnelActivate: false
+#- task: configuration@1
+#  inputs:
+#    connection: 'my-config'
+#    isTunnelActivate: false
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
