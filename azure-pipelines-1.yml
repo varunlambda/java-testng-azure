@@ -11,7 +11,7 @@ pool:
 
 variables:
   LT_USERNAME: 'kaustubhd'
-  LT_ACCESS_KEY: 'ZgVi48UdEQZ2vHgUs7XN54zNV8akxeOqY1hp4aHpYRDPmVvmgo'
+  LT_ACCESS_KEY: 'ZgVi48UdEY1hp4aHpYRDPmVvmgo'
   LT_BUILD_NAME: 'Madhuri Test'
 
 steps:
