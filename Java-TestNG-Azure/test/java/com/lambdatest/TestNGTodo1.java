@@ -24,6 +24,7 @@ public class TestNGTodo1 {
         String authkey = System.getenv("LT_ACCESS_KEY") == null ? "doLbtRzYpWdpD1xxcIQdByQ1b7kmqMNg43DrpsYwGxbPBtphNU" : System.getenv("LT_ACCESS_KEY");
 //         String buildname = System.getenv("LT_BUILD_NAME") == null ? "Your LT AccessKey"
 //                 : System.getenv("LT_BUILD_NAME");
+        System.setenv("LT_BUILD_NAME")
         String buildname = System.getenv("LT_BUILD_NAME");
 
         String hub = "@hub.lambdatest.com/wd/hub";
@@ -34,7 +35,7 @@ public class TestNGTodo1 {
         caps.setCapability("browserVersion", "80");
         caps.setCapability("version", "latest");
         caps.setCapability("build", buildname);
-        caps.setCapability("fixedIP", "10.253.33.109");
+//         caps.setCapability("fixedIP", "10.253.33.109");
         caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
 
@@ -59,65 +60,65 @@ public class TestNGTodo1 {
 
         System.out.println("Checking Box");
         driver.findElement(By.name("li1")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li2")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Box");
         driver.findElement(By.name("li3")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li4")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         driver.findElement(By.id("sampletodotext")).sendKeys(" List Item 6");
         driver.findElement(By.id("addbutton")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         driver.findElement(By.id("sampletodotext")).sendKeys(" List Item 7");
         driver.findElement(By.id("addbutton")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         driver.findElement(By.id("sampletodotext")).sendKeys(" List Item 8");
         driver.findElement(By.id("addbutton")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li1")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li3")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li7")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li8")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Entering Text");
         driver.findElement(By.id("sampletodotext")).sendKeys("Get Taste of Lambda and Stick to It");
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         driver.findElement(By.id("addbutton")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("Checking Another Box");
         driver.findElement(By.name("li9")).click();
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         // Let's also assert that the todo we added is present in the list.
 
         spanText = driver.findElementByXPath("/html/body/div/div/div/ul/li[9]/span").getText();
         Assert.assertEquals("Get Taste of Lambda and Stick to It", spanText);
         Status = "passed";
-        Thread.sleep(30000);
+//         Thread.sleep(30000);
 
         System.out.println("TestFinished");
 
