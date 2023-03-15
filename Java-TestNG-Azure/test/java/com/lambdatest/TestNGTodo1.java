@@ -24,7 +24,7 @@ public class TestNGTodo1 {
         String authkey = System.getenv("LT_ACCESS_KEY") == null ? "doLbtRzYpWdpD1xxcIQdByQ1b7kmqMNg43DrpsYwGxbPBtphNU" : System.getenv("LT_ACCESS_KEY");
 //         String buildname = System.getenv("LT_BUILD_NAME") == null ? "Your LT AccessKey"
 //                 : System.getenv("LT_BUILD_NAME");
-        System.setenv("LT_BUILD_NAME")
+        
         String buildname = System.getenv("LT_BUILD_NAME");
 
         String hub = "@hub.lambdatest.com/wd/hub";
